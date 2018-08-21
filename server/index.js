@@ -6,7 +6,7 @@ const peopleCtrl = require('./controllers/peopleCtrl');
 const app = express();
 
 app.use(json());
-app.use(express.static(path.join(__dirname, '../build')))
+app.use(express.static(path.join(__dirname, '../build')));
 
 //testing endpoint
 app.get('/api/test', (req, res) => {
